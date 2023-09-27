@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBIES</title>
+    <link rel="icon" type="image/x-icon" href="logo clear bg.png">
+    <link rel="stylesheet" href="starbies.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+
+        <header>
+            <a href="#"><img src="logo clear bg.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+        <div class="textbox">
+            <h2>It's not just Coffee<br>It's  <span>Starbucks</span></h2>
+            <p>Step into the inviting world of Starbucks, where every visit promises more than just a cup of coffee – it's an experience. 
+               Nestled in the heart of communities worldwide, Starbucks exudes a warm, comforting embrace, offering a sanctuary for coffee 
+               enthusiasts and seekers of cozy moments alike. The air is alive with the rich aroma of freshly ground beans, 
+               swirling and mingling with the laughter of friends catching up and the focused hum of laptops.</p>
+               <a href="#">Learn More</a>
+        </div>
+
+        <div class="imgBox">
+            <img src="aichi clear.png" class="Starbucks">
+          </div>
+        </div>
+
+    <ul class="thumb">
+      <li><img src="aichi clear.png" onclick="imgSlider('aichi clear.png');changeCircleColor('#65451F')"></li>
+      <li><img src="kyoto clear.png" onclick="imgSlider('kyoto clear.png');changeCircleColor('#A8DF8E')"></li>
+      <li><img src="toyama clear.png" onclick="imgSlider('toyama clear.png');changeCircleColor('#D80032')"></li>
+      <li><img src="saitama clear.png" onclick="imgSlider('saitama clear.png');changeCircleColor('#E55604')"></li>
+    </ul>
+    
+    <ul class="sci">
+       <li><a href="#"><img src="facebook.png"></a></li>
+       <li><a href="#"><img src="instagram.png"></a></li>
+       <li><a href="#"><img src="twitter.png"></a></li>
+    </ul>
+    
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+         document.querySelector('.Starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
